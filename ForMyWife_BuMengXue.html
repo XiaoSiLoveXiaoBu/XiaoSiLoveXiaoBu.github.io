@@ -16,31 +16,26 @@
 </head>
 
 <body>
-<div style="display:none"; class="music">
-<audio controls="controls" autoplay="autoplay" loop=-1>
-  <source src="love.mp3" type="audio/mpeg" />
-</audio>
-</div>
+
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments"><font size="6" color="#B0E0E6">I love three things</font> </span><br />
-				<span class="comments"><font size="6" color="#B0E0E6">in this world </font> </span><br />
-				<span class="comments"><font size="6" color="#B0E0E6">Sun moon and you</font> </span><br />
-				<span class="comments"><font size="6" color="#B0E0E6">Sun for morning</font> </span><br />
-				<span class="comments"><font size="6" color="#B0E0E6">moon for night</font> </span><br />
-				<span class="comments"><font size="6" color="#B0E0E6">and you forever </font> </span><br /><br />
-				<span class="comments"><font size="6" color="#FFB6C1">我爱这个世界上的三件事</font> </span><br />
-				<span class="comments"><font size="6" color="#FFB6C1">太阳 月亮 和你</font> </span><br />
-				<span class="comments"><font size="6" color="#FFB6C1">太阳是白昼</font> </span><br />
-				<span class="comments"><font size="6" color="#FFB6C1">月亮是夜晚</font> </span><br />
-				<span class="comments"><font size="6" color="#FFB6C1">而你是永远 </font> </span><br /><br />
-				<span class="comments"><font size="6" color="#EE82EE">和梦雪女神在一起</font> </span><br />
-				<span class="comments"><font size="6" color="#EE82EE">是小司这辈子最大的幸福</font> </span><br />
-				<span class="comments"><font size="6" color="#EE82EE">我会像养女儿一样宠你一辈子</font> </span><br />
-				<span class="comments"><font size="6" color="#EE82EE">然后把命给你</font> </span><br />
-				<span class="comments"><font size="6" color="#EE82EE">nothing’s gonna change my love for you</font> </span><br />
-				<span class="comments"><font size="6" color="#EE82EE">2018.03.09</font> </span><br />
+				<span class="comments"><font size="4" color="#B0E0E6">I love three things in the world</font> </span><br />
+				<span class="comments"><font size="4" color="#B0E0E6">Sun moon and you</font> </span><br />
+				<span class="comments"><font size="4" color="#B0E0E6">Sun for morning</font> </span><br />
+				<span class="comments"><font size="4" color="#B0E0E6">moon for night</font> </span><br />
+				<span class="comments"><font size="4" color="#B0E0E6">and you forever </font> </span><br /><br />
+				<span class="comments"><font size="4" color="#FFB6C1">我爱这个世界上的三件事</font> </span><br />
+				<span class="comments"><font size="4" color="#FFB6C1">太阳 月亮 和你</font> </span><br />
+				<span class="comments"><font size="4" color="#FFB6C1">太阳是白昼</font> </span><br />
+				<span class="comments"><font size="4" color="#FFB6C1">月亮是夜晚</font> </span><br />
+				<span class="comments"><font size="4" color="#FFB6C1">而你是永远 </font> </span><br /><br />
+				<span class="comments"><font size="5" color="#EE82EE">和梦雪女神在一起</font> </span><br />
+				<span class="comments"><font size="5" color="#EE82EE">是小司这辈子最大的幸福</font> </span><br />
+				<span class="comments"><font size="5" color="#EE82EE">我会像养女儿一样宠你一辈子</font> </span><br />
+				<span class="comments"><font size="5" color="#EE82EE">And then give my life to you.</font> </span><br />
+				<span class="comments"><font size="5" color="#EE82EE">Nothing’s gonna change my love for you</font> </span><br />
+				<span class="comments"><font size="5" color="#EE82EE">2018.03.09</font> </span><br />
 				
 			</div>
 			
@@ -63,11 +58,16 @@
 		</div>
 		
 	</div>
+	<div style="display:none"; class="music">
+<audio controls="controls" autoplay="autoplay" loop=-1>
+  <source src="love.mp3" type="audio/mpeg" />
+</audio>
+</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2018, 3, 9);
+		together.setFullYear(2018, 2, 7);
 		together.setHours(24);
 		together.setMinutes(0);
 		together.setSeconds(0);
@@ -85,12 +85,12 @@
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
-			}, 4000);
+			}, 10000);
 
 			timeElapse(together);
 			setInterval(function () {
 				timeElapse(together);
-			}, 500);
+			}, 1000);
 
 			adjustCodePosition();
 			$("#code").typewriter();
